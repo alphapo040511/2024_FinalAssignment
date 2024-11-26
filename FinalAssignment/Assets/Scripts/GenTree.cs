@@ -18,7 +18,7 @@ public class GenTree : MonoBehaviour
         {
             GameObject temp = Instantiate(TreeTrunkPrefabs);
             temp.transform.parent = transform;
-            temp.transform.localScale = new Vector3((1 - i * 0.05f), 1.7f, (1 - i * 0.05f))*2.5f;
+            temp.transform.localScale = new Vector3((1 - i * 0.05f), 1.7f, (1 - i * 0.05f))*1.5f;
             temp.transform.position = new Vector3(BeforePos.x + UnityEngine.Random.Range(-0.01f,0.01f), BeforePos.y, BeforePos.z + UnityEngine.Random.Range(-0.01f, 0.01f));
             temp.transform.rotation = transform.rotation;
             BeforePos = temp.transform.GetChild(0).transform.position;
